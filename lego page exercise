@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Account</title>
+<link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="Style2.css">
+
+
+<img src="image/bg.png" alt="LEGO" width="" class="bg">
+<div id="div00"> 
+<div1><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/shop.htm" >Shop</a></div1> <br>
+ <div2> <a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/Discover.htm" >Discover</a></div2> <br> 
+<div3><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/help.htm" >Help </a></div3><br>
+ <div4><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/account.htm" > Account </a> </div4> </div>
+<div id="div5"> 
+<form method = "post" action = "/cgi-bin/formmail">
+<h1 align=center>Sign in to your Lego account </h1>
+ <h3 align=center ><b>Sing in:</b></h3><br>
+    <p align=center>  <input name = "name" type = "text" size = "25">
+   </p>
+
+
+</div>
+
+
+<div id="footer">
+Copyright &copy; ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ 
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Discover</title>
+<link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="Style2.css">
+
+
+<img src="image/bg.png" alt="LEGO" width="" class="bg">
+<div id="div00"> 
+<div1><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/shop.htm" >Shop</a></div1> <br>
+ <div2> <a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/Discover.htm" >Discover</a></div2> <br> 
+<div3><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/help.htm" >Help </a></div3><br>
+ <div4><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/account.htm" > Account </a> </div4> </div>
+
+<div id="div5">
+<h1 align=center> Only the best is good enough</h1>
+
+As children shape their own worlds with LEGO bricks, we play our part in having a positive impact on the world they live in today and will inherit in the future.
+<br><br>
+<h1 align=center>Inspire and Develop the Builders of Tomorrow<h1>
+LEGO play starts to release a child’s potential from the moment they pick up their first brick.
+<br><br>
+<h1 align=center>The LEGO History</h1>
+Founded in 1932 by Ole Kirk Kristiansen, and based on the iconic LEGO brick, it is one of the world's leading manufacturers of play materials.
+<br><br>
+<h2 align=center>Supporting a more creative and resilient society<h2>
+
+</div>
+
+<div id="footer">
+Copyright &copy; ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ 
+</div>
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABIFBMVEXjAAv///8AAAD/7QDWAArlAAv/8AD/8gD/9AD/8QD/9gD8/Pz/+ADc3Nz09PT6+vru7u7/6gA3NzdwcHDm5uaJiYnUxQBMTEyVlZXKysq1tbUqKiohISGrq6saGhp9fX1YWFg/Pz/FxcWPhQD2rAV0dHRiYmKysrKcnJzW1taOjo7y4QDl1QD+4wHIugD45wC3qgDIAArzmwbqUAmwAAn81QIlIwD1pAXfzwCpnQAqJwBFQAD4ugQSEhLsZQj5xAPnMgnvfwfxigaBeABbVQA1MQASEQBnYADtbQjueAjrWAj7zQOPAAcqAAKvogCXjAA+OgAbGQBsZADpQgltAAUeAAKoAAg9AAODAAZMAAQSAABhAAUiAAK9AAl0AAb4wARzk3vyAAAS4klEQVR4nO1ca1saSxKGQeYmiihiUFHBSzAwoBi8RFRA442cmKPZs9k9m+P//xc707fpoapnJufsPvtMdt4PySP0NPV2V1dVV/dURvvZkflfC/Bfx/8Hw8OZnxWHjOFM/mfFjGCY+TmRMkw+UobJR8ow+UgZJh8pw+QjZZh8pAyTj5Rh8pEyTD5ShslHyjD5SBkmHynD5CNlmHykDJOPlGHykTJMPlKGyUfKMPlIGSYfKcPkI2WYfKQMk4+UYfKRMkw+UobJR8ow+UgZJhfkbZLMX2FInw/Hy/143KMY37+Eth8e3T88jB7uL4+G8STJD18eLx+PXhTN8/nfPn367sr4Zxge9QZ9u0BQmgx6R5i8lyevTqFg26YLwzDcf2274AxGw4i2totCwXk9uUdaiidGOxPDe8KmzUtXOw9TzfPvtX99/ar97fDH3wp6HJQKpqXnGHTLLJR2giRfehPbNqwchGXak4dA26PexLQNfbqhbpiF/s4jJtPljiMLIDcPEPzN09JP2uEPMhz1TURywxwMRd+jvmECiSVhbGfM2w7HfVPdVjfsfm8Y/P1hz0HGQzTnPecz2m+Hv/z9l6/5b//4IYaPfZU8RolN49gJo0dFMftktIc7pai2ulk6kfkNcqFPuM3HbAr/mf/+z5mM9n5Gm4nPML8jund1k8DQxSfGi9vkUubnqo5pWDqDZZhi8HXblXvHNqaakraW21BWQiM34gLsmFNPEJiB5qbjjV7+29f8d+3TN5fVL+9jM3xxTD5S3VbnbNvF0+dKi4+q7rgiFAQHU2+1D56ubz7eahTHN9uf210+AGY/ZwhZjS5teuw2uz3+crf9dNDq+uNhXw29338omVLnp5+fru9uXDxfb591pOZk9PKffncZftPe5/P/+h6X4WWOdmFZlesvmo/zpzb9ZeNkIoagVNm+0RB8vK5YdB1z8Q2r/fnuV9jyw/NBy2aNDOcoM3y1+Szpp0+g8+Pnz23b4iOSd+m5Wpr/TZs51DIxGd5TmXSzcw6kuabfsVHU7fb2R4weG5GO7euU3f0Mu+O4fa6wpnpp5Bj8iTPVEzcVpiFmP5P/+7eZr5n87+9//yOmpXmkJMwWPjUt38Da7Ts1PSpJy+TSbkc1bdt84uh/4U+cn9LmRj9/qP3hOv2Zf/wS0+MPS5TggaLr2xZXqO51hNAeOh5FIxfFz8OT7s+4lTuLan5Nm5tXLjnvb0IzDsM+mSPjSdnzDRvjznEMqTXtwI7d9KYlLE7lS3TzL1Sd7J47d9+/z8SN2npk8o2wMe94HdtgjNdX9pZ2Nzc3d3dXAp9XdGyuL9bXN8CHHxhFI3ICafM2oWgeZX4g8n4hq9yUf2HvzdtGtdHcEx88u4pnB4bgYrM2N1+czXLMl5uLvhzB9byx2WwszM/PF4vuP+VGcykgc1f3bO9z4In6cm3fe4K235ObkxHR+1z6OAwn3qhYFV+empC7LIS2cqZMcHM/i6C6qEGs1cqw5f6y3+DGyuld2YJurRan2ze2xLfndCmO4zN8IKZP565bW5Z7LnK1askqujyP8fMgCU6xhA6Fi9k3os2Z3ZX8zzIyIC7mxDrYJovKic/Q8cbEFlZmNdhxjX186s/xypyKH6C4Fda0zGW+bfszuITz8yCGpK1LkxjNsOdNod5WEMyW2ecHwjQuoz8vsC4RfBvedJarnm92p38+AD7azwVpJUYzpG6Au/E3073OTwvRDJdaiKFpi+rpwIbDxUbYlGf9WTwlavcYj+HAM6RGh2sV6HQ+KINWixJ6jrfci+QnNaZDAgzMNJheb5OQYicWw2GBzCFfB3DUpxi+ixR6gbVcikEwm5X9RjRBPiIfur6aRjEceJ7C4NEa0FHXrAcIxpiXuR8hmG34fV8sxGjPVm6FqOkwBsMjEiBYbHuzgXTZlAleKL2Ej1Wq7rPRLT0s+J2r3EoAbESePDW172MwfLXkaAYzZIHwoxpDBuIuNmIMBcFsnfcducApaOM7shBPohke0ZCQ/caKukeK3dgiRNhECdxhQBuHY8VfiNYgmuEgMIXYDFVlhnEmhmh1lEdBGEZ7Fop3tLkXnOqTSIY05O4eh4zipkQwjh7tK5UBxyyz/4iNw8HsghfWUGMaynDHiJpCWUnXYhiPuQuVjpZrm7tNaC3nmc9HO2s0oNZQQ0Z3c04UwyGJYLsfQqawITEMDagoaDyD+MwiM1iAYlnZd/UC/aIqMSxFMSRTKHwhaqwlS7oYRW/+Ld07rcOBX+C7KjC7DVXfzA/XpxWHfX5gxGFIkwds34KuHclbYcNMf31+oVzer77Zu1Au1yJ3CdCpbyr6Lq4pnpAY6lFaSjYVFo9I0Sn0o2jtAuG/tuhibX3jQpOwBhsKTYArgWw/kXCNb8IAwwZjaEVbmjzZFxbCpjArJV8QQ7qrYYDz0VB30lD0zfdskDyzNJUY3mJE9oV8X9vACEoxKTKFwX0Bxzps6GefgKKQ9YnEgsJJgUBY8hZRHr9Pgle2LwQLmkCaJMSHy+mhsClc9b+cdut0FWyCR/z1D+yy5PHp9knJ8DGwtUeduWxnoCdTTCEcqjX/2ylTuo9+6tPQECdN1/RtKzouJQGbzbKaG+jOzE8VYRFpICQXgHO9qvx2n1ooxFWIB6DxpeN1ThITozCGQzKFLbZtwmMmSTQ4zGUNA7Kk6vL38kLk+zKo174JhwaQfv5sijSGiiFxFSJgQ/eekqtA4h1fkWTALFU12OBdmajxfLkpUjRheg1Ugq0NksYoDMMYOsTbs4MCfD8uZXcRj7y7u9ysra7W3u3KWWC4QwDKXN9bWtqT1ia0M5IJB7rzln5+QDZFmRCGl7ac5kZ3c9LgX4QmUGb3RT4azjWuzDLgj/uDAn0UiwS8ZBsNaVQMr0hOlR0V1FHB/TQ6MsxT4DYJelVcmSXAH5dMOFR6qjDHninVr0IYDsnhRov1g24a5AxU9I59SzHkkrW6WFzZ293d3QpYHsz4Susf+IpZ+vkNUcGwbOKY2BmWyMddxY/sKrhLgCa5wbpYX94XS7S8Kp/EwZUrfQu+Y0uHGBrzIYQhjWeOVaqQDa6fGHv7/XBp3005EX+a4MqVIgm4OpiHIbtDcv9FwfDRkENSVAfl7EWMPKYiecHGCS5PEQbAkw3paAdmHdiI+TkMBUOy9bWfVaOYDWa642TBVvG5fqMg6Ie8YPRm/R9eB8tngUZBH71EvfUawtDbN+mtW9UoZoMmME4Cagmfa2L50Dz5nGr0GmFKGliGIzVD4gxF9gJLERYlgnGUlOSToLSq1elhUTG80o4FKilbO2QZ5l7UDHdIQMBO2tEsr5zK/wtKSgRSHGDsKYbX/+FFEM4VWfhEzEjYGXBOdoZYDrEo35iIo6SL6FzRTCG6t2YGpQ4+lnYiMGXHVPvOFlsnnCFRUhF0Y78u+dxYyWiyaqElrYYpOTFC0N1LkZRy20jybOalmiFRUv1GNVB+nkvDhxlgVdETUVI8e8DmEJBYCP1hpqQtsmvIqBmWZCXFnOFbeQqjj0RrCnWfvQhj6K3DC/CdpKRwdTAlJfezaI4GZ0jSF8Zn2hoNyOQpjDxQKzPjB/cfzLQrtNTz3dDKSZZUmWE8888OcYYnnhYX2LE2trmX0w7YOq01V+eKxVkXxf2aiKOhyWUC4RuT2TVsmhb8zCtigtk39E5URs2QxKTdECUN3I9A8qhszqauqEGl4t9sYh6XxHPAiDX8/mCGmn1JDkd9JYUMX7xlaDF3jy0S6Vc0zNoFv1dL5MfuG5ur6HnFGqDupy+R5cPMLLGk9qWaIbnjxWNSbFsR3L/BZYjn2KA2B+wV+CHPzoJwruirDxxZNmIkjyjcPcaQZBH1X1XyT08RnGScIDyt2JK/BjPsGRpgBKSNE7RPLI9wbftXaVCGeW8Z8o0Tcg6WDd4ThYJPjYBykrLyMl2bNoxldHz9YBGaJ+6kyT0T41HN8EWXLqsiUf9U8g/a800NBTA0gZQ4mC3CBSxO31dAC8gs/LEduFyKMLy3pdMKJOScOoyAywG7Qaoh0WdgqIDOeZoCT81FeyTaZ7pFnKG4W4oxJCEbv80JLfL0YQQQHD+tQDjIXhVMIVHSOvopAbQPPDHWJRHbMIThxFuGp6w5HKnp8yTgsUiItrG2sre0tLS16DtoMB/SBgxQocEAWCMN/gDihJndup5yhghDRzr3hctwfuvd22q12qgtMWUEpmhppVn1F8l8lQ0JPHKS5hDaRfIxME7Cv8BVyFWHXLssPIYwJFcR+YXtsHs9sw3PdsHLW+CD6jo+TX6+FcpLY3Wwv+dziISSbApJ0C07Q8iQJjCYoVHsTTmXunpjIKMcrlcryP5yXfHzVOmRiJQPF30nYhTGkBw5ddmBTMR1zoWYl5tqOMPssivwFjaKTdUAz60pNIsZUnpL38mHMSR5RL43jBJ9K951unlUS9XgGwiMfBlN3nL1pZv7cSaMoRez8d1vpFTNWBeZSfSCHG4rwWOG8EUigd/QPDfktxAUDGVnEXmXshnzCp5nd+MzFKFAbIY8bURWodkLZ+hFpdxZROYnduPcvM7SnED8C6UiXo15ZVbkbs4LyCoEDB2JYeSFx7V4N0qzPyKuFFPEuo+b9fcCxBeao8x/jqGX+I5z7Zl443grNiLUQcF1lKTy9elViGop3ztFaakXlUS8HyOJEG8hBnJAsa4Fc1d43CXhzGUUQ+90m18Tihp2oh0xZKjHX1XBvVmcRxZ44u+ARKRXgCDmLWL6QypN9I1tNi0bMSaxESAYR035SQXd2uf0YSTDniG9IRO6yHjfUSdPC9w2RqeORWTNX8WLePFLuph6TN/OGkOCaFxqsrteoRELT3tFhDVFP+sRYZVm/cPdFn/hN2L4xNVi7ZRklyYIQbC3CJxvh9zc9pMVoUa9KGfmQn2i/4KkVrH52SU8QJOxL1JvZBHmrJcYDElQI24+K2UqyomyEItUDWaFQ97rkQ6VO2ZO5wLUQxyu/wh5ByhXwHQUMqT3TMR792jkNBs4XdO0C4XkZZA6VbjYWTl3WrEDLx2rYreqnz+gb8WaryhBwHBYIjZJvPkOX0qV7tQJLMHJnq9iqeFF+I5ytvxG6vC2QubD9F9m36pCVZ1flbR/m6poX/ECJcgIk/2TNIbaXm2OqcrswlxjOZgvFVipzUkvps+tLskHVNvSS9Bry/uS/VjYbwYyw+dtXvJEep29vlyVxtnrXL4a/0T9hDPECUKGQ9J/sHbAxmJ9ZaVeXwvcude0u9Nb+c+1laV3zTfvdrfqU5P8ZJrBN/Xre8vNWu3N5l59qsDAdUmUf+kGq4csruxtLm/uLoHOO7TIhv6oIIicPfWomkQXrdi2jVZIEROBAxurtoChQgt30CoqXXXVEx/nrHSMqSSInQH36Rv7ETJ96Lji6GjxhwDuaCWTQuc2quU2K8pj9CnP6L61M1rzRLdgOBrGcMgqtXQ+qLu+fepScexO6DSed0RVodZzWEPtWhRqGWR69OVjM7xv7ZqVgdFL6hlU3BhipTa6qlomH594iRmv1RlSIojirpOTKztV0OI2Ho7dDnn9Hs+rnRR43+oCKNtt9ojhoJ4+jGHmXhS8QUoA/bpdCVbcMnMH2JI5P2uxikk5VmPGMk5RxbvuiA5Nh9YMY7Po9t1BC/o8d0SdsILCD4YyzByVmGxGodt5uvl4/KuL4483z2edbkHQE5W+jELr4PoDX2i3x1+ezyq6qKumm68DUUHKrjzd+PNy+/H582lBlICzdFG77CHHPrRsy5VA6vz82n3EFo/k8EgmimFmOBFqaHn1APWcZdkF25Qq6ZnO+LEvym8ZZqHUrrg4bbdsW6oap5vOvRsqlURpL9M2W6eVjotKu1QItLyS1O1lIupJuRIUuu1T3rkpP/I6jCCofqNkLIqHYXDl9nJa+Z7cilVmC7TjFfaGA6lYHynL5pVnk1pa5tWUQRw5Us0svPN+iA2NZJgZnujKCnsFvzLgSclWtPLaSVUSj16lEnRgwMwBUmBy7BSw6ovsEXsSg1/4G5Z5r6zhdA1GyzScQCXI/AgtfugK7ZwEjdzwpIS0dBXcmIwVQeXlIIc94gkxXVLxzzD0hBoPHCdn0xqCpp1znMEY2ubh+MprROsCelUBzZJzNcaqfj72+o5us2KDbkvbcpydB6ShRLI3cUq0SKjl1RC0rRIqxJ9kSHB0f/8wGo9HD/dHQ2U/L/fjk8Hr1dXVYKc3CqvGmj/yWl5NJpPByfjhUdmj/Mjw8mHcO9kZ7Jy4fcd6RHr4p62yy5EyTD5ShslHyjD5SBkmHynD5CNlmHykDJOPlGHykTJMPlKGyUfKMPlIGSYfKcPkI2WYfKQMk4+UYfKRMkw+UobJR8ow+UgZJh8pw+QjZZh8pAyTj5Rh8pEyTD5ShslHyjD5SBkmHynD5OP/iuHPCs7wcOZnxSFj+HMjZZh8/BsH1BCr9l6TkwAAAABJRU5ErkJggg==" type="image/x-icon">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="Style2.css">
+
+
+<img src="image/bg.png" alt="LEGO" width="" class="bg">
+<div id="div00"> 
+<div1><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/shop.htm" >Shop</a></div1> <br>
+ <div2> <a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/Discover.htm" >Discover</a></div2> <br> 
+<div3><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/help.htm" >Help </a></div3><br>
+ <div4><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/account.htm" > Account </a> </div4> </div>
+
+<div id="div5">
+<h1 align=center> HEY! HOW CAN WE HELP YOU? <h1>
+
+<table>
+  <tr>
+     <td>Call us<br>
+
+LEGO® Customer Service in English<br>
+
+1-844-903-5346<br>
+
+Monday to Friday 8am - 10pm ET<br>
+
+Saturday to Sunday 10am - 6pm ET<br>
+
+LEGO® Customer Service in Spanish<br>
+
+1-833-692-5346<br>
+
+Monday to Friday 10am - 8pm ET<br>
+
+LEGO Education Tech Support<br>
+
+1-866-349-5346<br>
+
+Monday to Friday 8:00 am to 10:00 pm ET<br>
+
+Our free number might be blocked by some providers. You may be charged when calling from a mobile phone. Please contact your provider for more details.
+</td>
+<br><br><br>
+
+
+<td>Write to us<br>
+
+LEGO® Customer Service<br>
+
+PO Box 1138<br>
+
+Enfield<br>
+
+CT 06083-<br>
+
+USA
+</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+<div id="footer">
+Copyright &copy; ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ 
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lego Store</title>
+<link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="Style2.css">
+
+
+<img src="image/bg.png" alt="LEGO" width="" class="bg">
+<div id="div00"> 
+<div1><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/shop.htm" >Shop</a></div1> <br>
+ <div2> <a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/Discover.htm" >Discover</a></div2> <br> 
+<div3><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/help.htm" >Help </a></div3><br>
+ <div4><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/account.htm" > Account </a> </div4> </div>
+
+<div id="div5">Τα LEGO (Λέγκο, ονομασία που προέρχεται από τις δανέζικες λέξεις leg godt που σημαίνουν «παίζω καλά») είναι δημοφιλής σειρά παιχνιδιών κατασκευής που παράγει ο Όμιλος LEGO, μια ιδιωτική εταιρεία με έδρα το Μπίλουντ της Δανίας. Η ναυαρχίδα των προϊόντων της εταιρείας «Lego», αποτελείται από πολύχρωμα συναρμολογήσιμα πλαστικά τούβλα και μια σειρά από συνοδευτικά εργαλεία, μικρές φιγούρες και διάφορα άλλα εξαρτήματα. Τα τούβλα Lego μπορούν να συναρμολογηθούν και να συνδεθούν με πολλούς τρόπους, για την κατασκευή αντικειμένων, όπως οχήματα, κτήρια, ακόμα και λειτουργικά ρομπότ. Οτιδήποτε κατασκευαστεί μπορεί στη συνέχεια να αποσυναρμολογηθεί και πάλι, και τα κομμάτια να χρησιμοποιηθούν για να δημιουργηθούν άλλα αντικείμενα.
+
+Η LEGO ξεκίνησε την κατασκευή συναρμολογούμενων παιχνιδιών το 1949. Από τότε έως και σήμερα αναπτύχθηκε μια παγκόσμια υποκουλτούρα σχετικά με τα παιχνίδια LEGO, η οποία έχει τροφοδοτήσει τη δημιουργία ταινιών, παιχνιδιών, διαγωνισμών και έξι θεματικών πάρκων αναψυχής. Έως το 2013 είχαν παραχθεί συνολικά περίπου 560 δισεκατομμύρια εξαρτήματα Lego.[1]
+
+Στην Ελλάδα τη δεδομένη στιγμή υπάρχουν τρεις λέσχες που δραστηριοποιούνται με τις κατασκευές και είναι αναγνωρισμένες από την εταιρία. Οι Greeks, οι Breeks και το The Brick που βρίσκεται στην Βόρειο Ελλάδα. Οι δύο πρώτες είναι Αθηναϊκές λέσχες και τέλος να προσέχετε που πατάτε γιατί ξέρετε τσούζει.
+<br><br><br>
+LEGO. Η Ιστορία ενός από τους μεγαλύτερους κατασκευαστές παιχνιδιών στον κόσμο!
+1932
+
+Ο Ole Kirk Kristiansen, μάστορας και ξυλουργός, ιδρύει την επιχείρησή του στο χωριό Billund της Δανίας. Η εταιρεία του κατασκευάζει σκάλες, σιδερώστρες, σκαμνιά και ξύλινα παιχνίδια.
+Ο γιος του, ο Godtfred Kirk Christiansen, αρχίζει να εργάζεται στην επιχείρηση σε ηλικία 12 ετών.
+
+1934
+
+Η εταιρεία και τα προϊόντα της υιοθετούν το όνομα LEGO, μια σύντμηση των δύο δανέζικων λέξεων "leg godt", που σημαίνει "παίζουν καλά". Αργότερα, συνειδητοποιούν ότι στα Λατινικά η λέξη σημαίνει "έβαλα μαζί".
+Η επιχείρηση έχει 6-7 υπαλλήλους.
+
+1935
+Η επιχείρηση κατασκευάζει την πρώτη της ξύλινη πάπια LEGO και εμπορεύεται το "Kirk's Sandgame" το πρώτο κατασκευαστικό παιχνίδι της.
+
+1936
+
+Ο Godtfred Kirk Christiansen (GKC) κόβει το σύνθημα του Ole Kirk "Μόνο το καλύτερο είναι αρκετά καλό" και το κρεμάει στο εργαστήριο.
+
+1937
+
+Ο Godtfred Kirk Christiansen ξεκινάει τη δημιουργία μοντέλων. Είναι 17 ετών.
+2018
+
+Το 2018 σηματοδοτεί ένα έτος επέτειο, καθώς το τούβλο LEGO® γιορτάζει την 60η επέτειό του, ο LEGOLAND Billund στρέφει τα 50 χρόνια και το μίνι-μάρκο LEGO γιορτάζει την 40ή επέτειό του.
+Τώρα είναι δυνατόν τα μικρότερα παιδιά να κωδικοποιούν με στοιχεία LEGO. Με την κυκλοφορία δύο τρένων LEGO DUPLO® και μιας συνδεδεμένης εφαρμογής, τα τρένα μπορούν να προγραμματιστούν για να οδηγήσουν, να φρενάρουν, να ανάψουν τα φώτα τους και να αλλάξουν την κατεύθυνση.
+Μετά την κυκλοφορία του LEGO Technic Bugatti Chiron, το Bugatti Chiron είναι κατασκευασμένο από περισσότερα από 1 εκατομμύριο στοιχεία LEGO Technic και χωρίς κόλλα. - Και οδηγεί!
+Το μεγαλύτερο μωσαϊκό στον κόσμο συναρμολογείται στο LEGO House. Μετρούν 12 x 14 μέτρα και αποτελείται από περισσότερα από 650.000 στοιχεία LEGO.
+Τα πρώτα βιώσιμα τούβλα LEGO, κατασκευασμένα από πλαστικό κόκκκο που εξάγεται από ζαχαροκάλαμο, εισέρχονται στην αγορά. Μεταξύ των πρώτων στοιχείων είναι δέντρα και θάμνοι.
+
+Το Ίδρυμα LEGO δωρίζει 100 εκατομμύρια δολάρια στο εργαστήριο Sesame Workshop για να βοηθήσει τα παιδιά που έχουν συλληφθεί σε συγκρούσεις σε όλο τον κόσμο.
+
+
+Πέρασε πολύς καιρός (τα τελευταία 85 χρόνια) από ένα μικρό εργαστήριο ξυλουργού σε μια σύγχρονη παγκόσμια επιχείρηση που είναι πλέον ένας από τους μεγαλύτερους κατασκευαστές παιχνιδιών στον κόσμο.
+
+
+Το τούβλο LEGO είναι το πιο σημαντικό προϊόν μας. Είμαστε περήφανοι που ονομάζουμε δύο φορές το "Παιχνίδι του αιώνα". Τα προϊόντα μας έχουν υποστεί εκτεταμένη ανάπτυξη με την πάροδο των ετών - αλλά η βάση παραμένει το παραδοσιακό τούβλο LEGO.
+
+Το τούβλο με τη σημερινή του μορφή ξεκίνησε το 1958. Η αρχή της σύμπλεξης με τους σωλήνες της το καθιστά μοναδικό και προσφέρει απεριόριστες δυνατότητες δόμησης. Είναι απλώς θέμα να πάρει τη φαντασία να πηγαίνει - και αφήνοντας μια πληθώρα δημιουργικών ιδεών να αναδύονται μέσα από το παιχνίδι.
+<br><br><br>
+
+Conact
+<table>
+<tr>
+    <td> LEGO® Customer Service in English</td>
+    <td>1-844-903-5346</td>
+    
+</tr>
+<tr>
+    <td>LEGO® Customer Service in Spanish</td>
+    <td>1-833-692-5346</td>
+</tr>
+<tr>
+    <td>LEGO Education Tech Support</td>
+    <td>1-866-349-5346</td>
+</tr>
+</table>
+<br><br>
+Get in touch with a LEGO expert
+<table>
+
+<tr>
+ <td>ABOUT US</td>
+ <td>ATTRACTIONS</td>
+ <td>MORE FROM US</td>
+</tr>
+
+<tr>
+ <td>LEGO® News</td>
+ <td>LEGO® House</td>
+ <td>LEGO® LIFE<td>
+</tr>
+ 
+<tr>
+ <td>About the LEGO Group</td>
+ <td>LEGOLAND® Parks</td>
+ <td>LEGO Education</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+
+<div id="footer">
+Copyright &copy; ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ 
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABIFBMVEXjAAv///8AAAD/7QDWAArlAAv/8AD/8gD/9AD/8QD/9gD8/Pz/+ADc3Nz09PT6+vru7u7/6gA3NzdwcHDm5uaJiYnUxQBMTEyVlZXKysq1tbUqKiohISGrq6saGhp9fX1YWFg/Pz/FxcWPhQD2rAV0dHRiYmKysrKcnJzW1taOjo7y4QDl1QD+4wHIugD45wC3qgDIAArzmwbqUAmwAAn81QIlIwD1pAXfzwCpnQAqJwBFQAD4ugQSEhLsZQj5xAPnMgnvfwfxigaBeABbVQA1MQASEQBnYADtbQjueAjrWAj7zQOPAAcqAAKvogCXjAA+OgAbGQBsZADpQgltAAUeAAKoAAg9AAODAAZMAAQSAABhAAUiAAK9AAl0AAb4wARzk3vyAAAS4klEQVR4nO1ca1saSxKGQeYmiihiUFHBSzAwoBi8RFRA442cmKPZs9k9m+P//xc707fpoapnJufsPvtMdt4PySP0NPV2V1dVV/dURvvZkflfC/Bfx/8Hw8OZnxWHjOFM/mfFjGCY+TmRMkw+UobJR8ow+UgZJh8pw+QjZZh8pAyTj5Rh8pEyTD5ShslHyjD5SBkmHynD5CNlmHykDJOPlGHykTJMPlKGyUfKMPlIGSYfKcPkI2WYfKQMk4+UYfKRMkw+UobJR8ow+UgZJhfkbZLMX2FInw/Hy/143KMY37+Eth8e3T88jB7uL4+G8STJD18eLx+PXhTN8/nfPn367sr4Zxge9QZ9u0BQmgx6R5i8lyevTqFg26YLwzDcf2274AxGw4i2totCwXk9uUdaiidGOxPDe8KmzUtXOw9TzfPvtX99/ar97fDH3wp6HJQKpqXnGHTLLJR2giRfehPbNqwchGXak4dA26PexLQNfbqhbpiF/s4jJtPljiMLIDcPEPzN09JP2uEPMhz1TURywxwMRd+jvmECiSVhbGfM2w7HfVPdVjfsfm8Y/P1hz0HGQzTnPecz2m+Hv/z9l6/5b//4IYaPfZU8RolN49gJo0dFMftktIc7pai2ulk6kfkNcqFPuM3HbAr/mf/+z5mM9n5Gm4nPML8jund1k8DQxSfGi9vkUubnqo5pWDqDZZhi8HXblXvHNqaakraW21BWQiM34gLsmFNPEJiB5qbjjV7+29f8d+3TN5fVL+9jM3xxTD5S3VbnbNvF0+dKi4+q7rgiFAQHU2+1D56ubz7eahTHN9uf210+AGY/ZwhZjS5teuw2uz3+crf9dNDq+uNhXw29338omVLnp5+fru9uXDxfb591pOZk9PKffncZftPe5/P/+h6X4WWOdmFZlesvmo/zpzb9ZeNkIoagVNm+0RB8vK5YdB1z8Q2r/fnuV9jyw/NBy2aNDOcoM3y1+Szpp0+g8+Pnz23b4iOSd+m5Wpr/TZs51DIxGd5TmXSzcw6kuabfsVHU7fb2R4weG5GO7euU3f0Mu+O4fa6wpnpp5Bj8iTPVEzcVpiFmP5P/+7eZr5n87+9//yOmpXmkJMwWPjUt38Da7Ts1PSpJy+TSbkc1bdt84uh/4U+cn9LmRj9/qP3hOv2Zf/wS0+MPS5TggaLr2xZXqO51hNAeOh5FIxfFz8OT7s+4lTuLan5Nm5tXLjnvb0IzDsM+mSPjSdnzDRvjznEMqTXtwI7d9KYlLE7lS3TzL1Sd7J47d9+/z8SN2npk8o2wMe94HdtgjNdX9pZ2Nzc3d3dXAp9XdGyuL9bXN8CHHxhFI3ICafM2oWgeZX4g8n4hq9yUf2HvzdtGtdHcEx88u4pnB4bgYrM2N1+czXLMl5uLvhzB9byx2WwszM/PF4vuP+VGcykgc1f3bO9z4In6cm3fe4K235ObkxHR+1z6OAwn3qhYFV+empC7LIS2cqZMcHM/i6C6qEGs1cqw5f6y3+DGyuld2YJurRan2ze2xLfndCmO4zN8IKZP565bW5Z7LnK1askqujyP8fMgCU6xhA6Fi9k3os2Z3ZX8zzIyIC7mxDrYJovKic/Q8cbEFlZmNdhxjX186s/xypyKH6C4Fda0zGW+bfszuITz8yCGpK1LkxjNsOdNod5WEMyW2ecHwjQuoz8vsC4RfBvedJarnm92p38+AD7azwVpJUYzpG6Au/E3073OTwvRDJdaiKFpi+rpwIbDxUbYlGf9WTwlavcYj+HAM6RGh2sV6HQ+KINWixJ6jrfci+QnNaZDAgzMNJheb5OQYicWw2GBzCFfB3DUpxi+ixR6gbVcikEwm5X9RjRBPiIfur6aRjEceJ7C4NEa0FHXrAcIxpiXuR8hmG34fV8sxGjPVm6FqOkwBsMjEiBYbHuzgXTZlAleKL2Ej1Wq7rPRLT0s+J2r3EoAbESePDW172MwfLXkaAYzZIHwoxpDBuIuNmIMBcFsnfcducApaOM7shBPohke0ZCQ/caKukeK3dgiRNhECdxhQBuHY8VfiNYgmuEgMIXYDFVlhnEmhmh1lEdBGEZ7Fop3tLkXnOqTSIY05O4eh4zipkQwjh7tK5UBxyyz/4iNw8HsghfWUGMaynDHiJpCWUnXYhiPuQuVjpZrm7tNaC3nmc9HO2s0oNZQQ0Z3c04UwyGJYLsfQqawITEMDagoaDyD+MwiM1iAYlnZd/UC/aIqMSxFMSRTKHwhaqwlS7oYRW/+Ld07rcOBX+C7KjC7DVXfzA/XpxWHfX5gxGFIkwds34KuHclbYcNMf31+oVzer77Zu1Au1yJ3CdCpbyr6Lq4pnpAY6lFaSjYVFo9I0Sn0o2jtAuG/tuhibX3jQpOwBhsKTYArgWw/kXCNb8IAwwZjaEVbmjzZFxbCpjArJV8QQ7qrYYDz0VB30lD0zfdskDyzNJUY3mJE9oV8X9vACEoxKTKFwX0Bxzps6GefgKKQ9YnEgsJJgUBY8hZRHr9Pgle2LwQLmkCaJMSHy+mhsClc9b+cdut0FWyCR/z1D+yy5PHp9knJ8DGwtUeduWxnoCdTTCEcqjX/2ylTuo9+6tPQECdN1/RtKzouJQGbzbKaG+jOzE8VYRFpICQXgHO9qvx2n1ooxFWIB6DxpeN1ThITozCGQzKFLbZtwmMmSTQ4zGUNA7Kk6vL38kLk+zKo174JhwaQfv5sijSGiiFxFSJgQ/eekqtA4h1fkWTALFU12OBdmajxfLkpUjRheg1Ugq0NksYoDMMYOsTbs4MCfD8uZXcRj7y7u9ysra7W3u3KWWC4QwDKXN9bWtqT1ia0M5IJB7rzln5+QDZFmRCGl7ac5kZ3c9LgX4QmUGb3RT4azjWuzDLgj/uDAn0UiwS8ZBsNaVQMr0hOlR0V1FHB/TQ6MsxT4DYJelVcmSXAH5dMOFR6qjDHninVr0IYDsnhRov1g24a5AxU9I59SzHkkrW6WFzZ293d3QpYHsz4Susf+IpZ+vkNUcGwbOKY2BmWyMddxY/sKrhLgCa5wbpYX94XS7S8Kp/EwZUrfQu+Y0uHGBrzIYQhjWeOVaqQDa6fGHv7/XBp3005EX+a4MqVIgm4OpiHIbtDcv9FwfDRkENSVAfl7EWMPKYiecHGCS5PEQbAkw3paAdmHdiI+TkMBUOy9bWfVaOYDWa642TBVvG5fqMg6Ie8YPRm/R9eB8tngUZBH71EvfUawtDbN+mtW9UoZoMmME4Cagmfa2L50Dz5nGr0GmFKGliGIzVD4gxF9gJLERYlgnGUlOSToLSq1elhUTG80o4FKilbO2QZ5l7UDHdIQMBO2tEsr5zK/wtKSgRSHGDsKYbX/+FFEM4VWfhEzEjYGXBOdoZYDrEo35iIo6SL6FzRTCG6t2YGpQ4+lnYiMGXHVPvOFlsnnCFRUhF0Y78u+dxYyWiyaqElrYYpOTFC0N1LkZRy20jybOalmiFRUv1GNVB+nkvDhxlgVdETUVI8e8DmEJBYCP1hpqQtsmvIqBmWZCXFnOFbeQqjj0RrCnWfvQhj6K3DC/CdpKRwdTAlJfezaI4GZ0jSF8Zn2hoNyOQpjDxQKzPjB/cfzLQrtNTz3dDKSZZUmWE8888OcYYnnhYX2LE2trmX0w7YOq01V+eKxVkXxf2aiKOhyWUC4RuT2TVsmhb8zCtigtk39E5URs2QxKTdECUN3I9A8qhszqauqEGl4t9sYh6XxHPAiDX8/mCGmn1JDkd9JYUMX7xlaDF3jy0S6Vc0zNoFv1dL5MfuG5ur6HnFGqDupy+R5cPMLLGk9qWaIbnjxWNSbFsR3L/BZYjn2KA2B+wV+CHPzoJwruirDxxZNmIkjyjcPcaQZBH1X1XyT08RnGScIDyt2JK/BjPsGRpgBKSNE7RPLI9wbftXaVCGeW8Z8o0Tcg6WDd4ThYJPjYBykrLyMl2bNoxldHz9YBGaJ+6kyT0T41HN8EWXLqsiUf9U8g/a800NBTA0gZQ4mC3CBSxO31dAC8gs/LEduFyKMLy3pdMKJOScOoyAywG7Qaoh0WdgqIDOeZoCT81FeyTaZ7pFnKG4W4oxJCEbv80JLfL0YQQQHD+tQDjIXhVMIVHSOvopAbQPPDHWJRHbMIThxFuGp6w5HKnp8yTgsUiItrG2sre0tLS16DtoMB/SBgxQocEAWCMN/gDihJndup5yhghDRzr3hctwfuvd22q12qgtMWUEpmhppVn1F8l8lQ0JPHKS5hDaRfIxME7Cv8BVyFWHXLssPIYwJFcR+YXtsHs9sw3PdsHLW+CD6jo+TX6+FcpLY3Wwv+dziISSbApJ0C07Q8iQJjCYoVHsTTmXunpjIKMcrlcryP5yXfHzVOmRiJQPF30nYhTGkBw5ddmBTMR1zoWYl5tqOMPssivwFjaKTdUAz60pNIsZUnpL38mHMSR5RL43jBJ9K951unlUS9XgGwiMfBlN3nL1pZv7cSaMoRez8d1vpFTNWBeZSfSCHG4rwWOG8EUigd/QPDfktxAUDGVnEXmXshnzCp5nd+MzFKFAbIY8bURWodkLZ+hFpdxZROYnduPcvM7SnED8C6UiXo15ZVbkbs4LyCoEDB2JYeSFx7V4N0qzPyKuFFPEuo+b9fcCxBeao8x/jqGX+I5z7Zl443grNiLUQcF1lKTy9elViGop3ztFaakXlUS8HyOJEG8hBnJAsa4Fc1d43CXhzGUUQ+90m18Tihp2oh0xZKjHX1XBvVmcRxZ44u+ARKRXgCDmLWL6QypN9I1tNi0bMSaxESAYR035SQXd2uf0YSTDniG9IRO6yHjfUSdPC9w2RqeORWTNX8WLePFLuph6TN/OGkOCaFxqsrteoRELT3tFhDVFP+sRYZVm/cPdFn/hN2L4xNVi7ZRklyYIQbC3CJxvh9zc9pMVoUa9KGfmQn2i/4KkVrH52SU8QJOxL1JvZBHmrJcYDElQI24+K2UqyomyEItUDWaFQ97rkQ6VO2ZO5wLUQxyu/wh5ByhXwHQUMqT3TMR792jkNBs4XdO0C4XkZZA6VbjYWTl3WrEDLx2rYreqnz+gb8WaryhBwHBYIjZJvPkOX0qV7tQJLMHJnq9iqeFF+I5ytvxG6vC2QubD9F9m36pCVZ1flbR/m6poX/ECJcgIk/2TNIbaXm2OqcrswlxjOZgvFVipzUkvps+tLskHVNvSS9Bry/uS/VjYbwYyw+dtXvJEep29vlyVxtnrXL4a/0T9hDPECUKGQ9J/sHbAxmJ9ZaVeXwvcude0u9Nb+c+1laV3zTfvdrfqU5P8ZJrBN/Xre8vNWu3N5l59qsDAdUmUf+kGq4csruxtLm/uLoHOO7TIhv6oIIicPfWomkQXrdi2jVZIEROBAxurtoChQgt30CoqXXXVEx/nrHSMqSSInQH36Rv7ETJ96Lji6GjxhwDuaCWTQuc2quU2K8pj9CnP6L61M1rzRLdgOBrGcMgqtXQ+qLu+fepScexO6DSed0RVodZzWEPtWhRqGWR69OVjM7xv7ZqVgdFL6hlU3BhipTa6qlomH594iRmv1RlSIojirpOTKztV0OI2Ho7dDnn9Hs+rnRR43+oCKNtt9ojhoJ4+jGHmXhS8QUoA/bpdCVbcMnMH2JI5P2uxikk5VmPGMk5RxbvuiA5Nh9YMY7Po9t1BC/o8d0SdsILCD4YyzByVmGxGodt5uvl4/KuL4483z2edbkHQE5W+jELr4PoDX2i3x1+ezyq6qKumm68DUUHKrjzd+PNy+/H582lBlICzdFG77CHHPrRsy5VA6vz82n3EFo/k8EgmimFmOBFqaHn1APWcZdkF25Qq6ZnO+LEvym8ZZqHUrrg4bbdsW6oap5vOvRsqlURpL9M2W6eVjotKu1QItLyS1O1lIupJuRIUuu1T3rkpP/I6jCCofqNkLIqHYXDl9nJa+Z7cilVmC7TjFfaGA6lYHynL5pVnk1pa5tWUQRw5Us0svPN+iA2NZJgZnujKCnsFvzLgSclWtPLaSVUSj16lEnRgwMwBUmBy7BSw6ovsEXsSg1/4G5Z5r6zhdA1GyzScQCXI/AgtfugK7ZwEjdzwpIS0dBXcmIwVQeXlIIc94gkxXVLxzzD0hBoPHCdn0xqCpp1znMEY2ubh+MprROsCelUBzZJzNcaqfj72+o5us2KDbkvbcpydB6ShRLI3cUq0SKjl1RC0rRIqxJ9kSHB0f/8wGo9HD/dHQ2U/L/fjk8Hr1dXVYKc3CqvGmj/yWl5NJpPByfjhUdmj/Mjw8mHcO9kZ7Jy4fcd6RHr4p62yy5EyTD5ShslHyjD5SBkmHynD5CNlmHykDJOPlGHykTJMPlKGyUfKMPlIGSYfKcPkI2WYfKQMk4+UYfKRMkw+UobJR8ow+UgZJh8pw+QjZZh8pAyTj5Rh8pEyTD5ShslHyjD5SBkmHynD5OP/iuHPCs7wcOZnxSFj+HMjZZh8/BsH1BCr9l6TkwAAAABJRU5ErkJggg==" type="image/x-icon">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="Style2.css">
+
+
+<img src="image/bg.png" alt="LEGO" width="" class="bg">
+<div id="div00"> 
+<div1><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/shop.htm" >Shop</a></div1> <br>
+ <div2> <a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/Discover.htm" >Discover</a></div2> <br> 
+<div3><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/help.htm" >Help </a></div3><br>
+ <div4><a href="file:///C:/Users/nikol/OneDrive/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82/account.htm" > Account </a> </div4> </div>
+
+<div id="div5">
+
+<table align=center>
+<tr>
+  <td><h1>Shop</h1>
+  </td>
+</tr>
+<tr>
+  <td>Sets by theme
+  </td>
+</tr>
+<tr>
+  <td>Age
+  </td>
+</tr>
+<tr>
+  <td>Price Ranges
+  </td>
+</tr>
+<tr>
+  <td>LEGO Merchandise
+  </td>
+</tr>
+<tr>
+  <td>Interests
+  </td>
+</tr>
+<tr>
+  <td>Exclusives
+  </td>
+</tr>
+<tr>
+  <td>New
+  </td>
+</tr>
+<tr>
+  <td>New
+  </td>
+</tr>
+<tr>
+ <td>Bestsellers
+ </td>
+</tr>
+
+</table>
+
+
+</div>
+
+<div id="footer">
+Copyright &copy; ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ 
+</div>
+</body>
+</html>
+#div00{
+float:right;
+margin-left: 80%;
+width:80%;
+height: 150px;
+background-color:red;}
+
+
+div1 
+{
+    border: 2px solid #a1a1a1;
+    
+    float:center;
+    display: none;
+  
+    z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  
+	padding-top: 10px; 
+	padding-bottom: 5px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	
+    background: #FFFF00;
+    width: 450px;
+	
+    border-radius: 45px;
+    
+    text-decoration:none;
+    display: inline-block;
+}
+
+div1:hover {
+  background-color: #555;
+}
+
+
+
+div2 
+{
+    border: 2px solid #a1a1a1;
+    
+    float:center;
+    display: none;
+  
+    z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  
+	padding-top: 10px; 
+	padding-bottom: 5px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	
+    background: #FFFF00;
+    width: 450px;
+	
+    border-radius: 45px;
+    
+    text-decoration:none;
+    display: inline-block;
+}
+
+div2:hover {
+  background-color: #555;
+}
+
+
+div3 
+{
+    border: 2px solid #a1a1a1;
+    
+    float:center;
+    display: none;
+  
+    z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  
+	padding-top: 10px; 
+	padding-bottom: 5px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	
+    background: #FFFF00;
+    width: 450px;
+	
+    border-radius: 45px;
+    
+    text-decoration:none;
+    display: inline-block;
+}
+
+div3:hover {
+  background-color: #555;
+}
+
+
+div4 
+{
+    border: 2px solid #a1a1a1;
+    
+    float:center;
+    display: none;
+  
+    z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  
+	padding-top: 10px; 
+	padding-bottom: 5px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	
+    background: #FFFF00;
+    width: 450px;
+	
+    border-radius: 45px;
+    
+    text-decoration:none;
+    display: inline-block;
+}
+
+div4:hover {
+  background-color: #555;
+}
+
+#div5{
+float:center;
+margin: 50%
+width: 100%;
+height: 800px;
+background-color:#0000CC;
+clear: both;}
+
+
+
+bg{
+position:absolute;
+top=0;
+
+}
+
+#footer 
+{
+    text-size:10px;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+	padding:15px;
+}
+body<overflow: scroll;}
+
+img{
+ 
+    float:right;
+margin: 5px;
+width: 50%;
+height: 100px;
+background-color:#0000CC;
+clear: both;
+	
+}
