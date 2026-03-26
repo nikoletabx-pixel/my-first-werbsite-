@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{      
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    
+}
+
+
+body
+{
+	background-color: red;
+}
+
+p
+{
+    display: inline;
+	background-color: white;
+    align:center;
+    width: 80px;
+    height: 80px;
+   
+}
+
+</style>
+
+<script>
+	function myFunction() 
+	{
+		 document.getElementById("first").style.backgroundColor = "yellow";
+		document.getElementById("first").style.color = "black";
+		document.getElementById("first").style.width = "300px";
+        document.getElementById("second").style.backgroundColor = "blue";
+		document.getElementById("second").style.color = "black";
+		document.getElementById("second").style.width = "300px";
+		document.getElementById("third").style.backgroundColor = "blue";
+		document.getElementById("third").style.color = "black";
+		document.getElementById("third").style.width = "300px";
+        
+	}
+	
+	function myFunction2() 
+	{
+		  document.getElementById("first").style.backgroundColor = "blue";
+		document.getElementById("first").style.color = "black";
+		document.getElementById("first").style.width = "300px";
+        document.getElementById("second").style.backgroundColor = "yellow";
+		document.getElementById("second").style.color = "black";
+		document.getElementById("second").style.width = "300px";
+		document.getElementById("third").style.backgroundColor = "blue";
+		document.getElementById("third").style.color = "black";
+		document.getElementById("third").style.width = "300px";
+	}
+    function myFunction3() 
+	{
+        document.getElementById("first").style.backgroundColor = "blue";
+		document.getElementById("first").style.color = "black";
+		document.getElementById("first").style.width = "300px";
+        document.getElementById("second").style.backgroundColor = "blue";
+		document.getElementById("second").style.color = "black";
+		document.getElementById("second").style.width = "300px";
+		document.getElementById("third").style.backgroundColor = "yellow";
+		document.getElementById("third").style.color = "black";
+		document.getElementById("third").style.width = "300px";
+	}
+</script>
+
+  <script>
+		
+		  function myFunction11() 
+	{
+		document.getElementById("first").style.visibility = "visible";
+        document.getElementById("second").style.visibility = "hidden";
+        document.getElementById("third").style.visibility = "hidden ";
+         
+		document.getElementById("first").style.color = "#FF00FF";
+		document.getElementById("first").style.width = "300px";
+        document.getElementById("mybody").style.backgroundColor = "Gray";
+document.getElementById("first").style.fontSize = "14pt";
+	}
+	
+	function myFunction22() 
+	{
+		document.getElementById("first").style.visibility = "hidden";
+        document.getElementById("second").style.visibility = "visible";
+        document.getElementById("third").style.visibility = "hidden";
+        
+		document.getElementById("second").style.color = "#669900";
+		document.getElementById("second").style.width = "300px";
+        document.getElementById("mybody").style.backgroundColor = "white";
+document.getElementById("second").style.fontSize = "18pt";
+		
+	}
+    function myFunction33() 
+	{
+		document.getElementById("first").style.visibility = "hidden";
+        document.getElementById("second").style.visibility = "hidden ";
+        document.getElementById("third").style.visibility = "visible";
+       
+		document.getElementById("third").style.color = "#669900";
+		document.getElementById("third").style.width = "300px";
+        document.getElementById("mybody").style.backgroundColor = "Gray";
+document.getElementById("third").style.fontSize = "22pt";
+
+          }
+	</script>
+</head>
+<body id="mybody">
+
+<p onMouseOver="myFunction()"><button onclick="myFunction11()">Αλλαγη 1ης </button></p>
+<p onMouseOut="myFunction2()"> <button onclick="myFunction22()">Αλλαγη 2ης </button></p>
+<p onMouseOut="myFunction3()"><button onclick="myFunction33()">Αλλαγη 3ης </button></p>
+<hr/>
+<br /><br /><br />
+
+<div id="first">
+ Παίρνω ένα ποδήλατο και φεύγω για τ' αδύνατο
+Κρατάω στο χέρι το κλειδί
+Πιάνω το τιμόνι ο σφυγμός μου δυναμώνει
+Το έργο κάπου το 'χω ξαναδεί
+Ήμουν μικρό παιδάκι με καθαρή καρδιά
+Είχα τ'ονειρό μου το ποδήλατό μου
+Κι όλα έμοιαζαν σωστά
+Έγινα δεκάξι κι όλα ήταν εντάξει
+Είχα μια ζωή μπροστά
+Το ποδήλατό μου ήταν πάντοτε δικό μου
+Και με πήγαινε πολύ μακρυά
+Μέσα στη Σαχάρα σαν την πιο βαθιά λαχτάρα
+Μ'οδηγούσε πέρα απ'τη χαρά
+Και τώρα στον αγώνα ξανά απ'την αρχή
+Φόρτσα στο πεντάλι να 'ρθουνε κι οι άλλοι
+Πάμε για ορθοπεταλιές
+Τα ποδήλατά μας όπως τα όνειρά μας
+Ξέρουν από ανηφοριές
+Και τώρα στον αγώνα ξανά απ'την αρχή
+Φόρτσα στο πεντάλι να 'ρθουνε κι οι άλλοι
+Πάμε για ορθοπεταλιές
+Τα ποδήλατά μας όπως τα όνειρά μας
+Ξέρουν από ανηφοριές
+</div>
+<br>
+<div id="second">
+  Είσαι ένα περιστέρι
+Που πετά στον ουρανό
+Πάμε να βρούμε ένα αστέρι
+Σε ένα κόσμο μακρινό
+Πάμε να βρούμε ένα αστείο
+Σε ένα κόσμο μακρινό
+Έλα να
+Έλα να
+Βρούμε ένα αστέρι
+Που πετά
+Που πετά
+Ψηλά στον ουρανό
+Είσαι ένα καρδιοχτύπι
+Μου έχεις κόψει τα φτερά
+Έλα πάρε μου την λύπη
+Έλα δόσε μου την χαρά
+Έλα πάρε μου την λύπη
+Έλα δόσε μου την χαρά
+Είσαι ένα καρδιοχτύπι
+Μου έχεις κόψει τα φτερά
+Τα γαρύφαλλα σου μέτρα
+Σε αγαπώ όσο κανείς
+Κάνω την καρδιά μου πέτρα
+Και προσμένω να με δεις
+Κάνω την καρδιά μου πέτρα
+Και προσμένω να με δεις
+Έλα και
+Έλα και
+Και σε περιμένω
+Στην γωνιά
+Στην γωνία
+Του δρόμου να με δεις
+</div>
+<br>
+<div id="third">
+  Πέντε πέντε δέκα
+Δέκα δέκα ανεβαίνω τα σκαλιά
+Για τα δυό σου μάτια για τις δυό φωτιές
+Που όταν με κοιτάζουν νοιώθω μαχαιριές
+Βάρκα στο γιαλό βάρκα στο γιαλό
+Γλάστρα με ζουμπούλι και βασιλικό
+Πέντε πέντε δέκα
+Δέκα δέκα θα σου δίνω τα φιλιά
+Κι όταν σε μεθύσω κι όταν θα σε πιώ
+Θα σε νανουρίσω με γλυκό σκοπό
+Βάρκα στο γιαλό βάρκα στο γιαλό
+Γλάστρα με ζουμπούλι και βασιλικό
+Πέντε πέντε δέκα
+Δέκα δέκα κατεβαίνω τα σκαλιά
+Φεύγω για τα ξένα για τη ξενητιά
+Και μην κλαίς για μένα αγάπη μου γλυκειά
+Βάρκα στο γιαλό βάρκα στο γιαλό
+Γλάστρα με ζουμπούλι και βασιλικό
+</div>
+
+</body>
+</html>
