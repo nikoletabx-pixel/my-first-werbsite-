@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title > ΕΤΑΙΡΙΑΣ </title>
+<h1 align=center> ΠΡΟΥΠΟΛΟΓΙΣΜΟΣ ΕΤΑΙΡΙΑΣ </h1>
+
+
+</head>
+<body bgcolor=FFFFC2 >
+<img src="https://www.businessportal.gr/images/logo_keee.png"  width="250" height="100">
+<img src="https://www.businessportal.gr/images/logo_yp.jpg" width="250" height="100">
+
+<table border width=70% align=center>
+<thead>
+<tr>
+   <th colspan="6" style="background-color:#777777;"> 
+        <h2>Οικονομικά στοιχεία</h2> 
+   </th>
+</tr>
+</thead>
+
+
+<tr>
+  <td rowspan="2" style="background-color:#B3B3B3;" ><h3>Ετος<h3></td>
+  <td colspan="2" align=center style="background-color:#B3B3B3;" ><h3> 2017 </h3></td>
+  <td colspan="2" align=center  style="background-color:#B3B3B3;"><h3> 2018 </h3></td>
+</tr>
+  
+
+
+<tr>
+ 
+  <td><u>Εκτιμώμενα</u></td>
+  <td><u>Πραγματικά</u></td>
+  <td><u>Εκτιμώμενα</u></td>
+  <td><u>Πραγματικά</u></td>
+</tr>
+
+
+
+<tr>
+         
+ <td rowspan="2" style="background-color:#B3B3B3;"  ><h3>Έσοδα</h3></td>
+   <td>Α Εξ. 50.000€</td> 
+  <td>Α Εξ. 45.000€</td>     
+  <td>Α Εξ. 50.000€</td>
+  <td>Α Εξ. 54.000€</td>
+</tr>
+
+
+
+<tr>   
+   <td>Α Εξ. 55.000€</td> 
+  <td>Α Εξ. 48.000€</td>     
+  <td>Α Εξ. 50.000€</td>
+  <td>Α Εξ. 57.000€</td>
+</tr>
+
+
+<tr>
+   <td rowspan="2"  style="background-color:#B3B3B3;"><h3>Έξοδα</h3></td>   
+   <td>Α Εξ. 40.000€</td> 
+  <td>Α Εξ. 38.000€</td>     
+  <td>Α Εξ. 34.000€</td>
+  <td>Α Εξ. 54.000€</td>
+</tr>
+
+
+<tr>   
+   <td>Α Εξ. 35.000€</td> 
+  <td>Α Εξ. 39.000€</td>     
+  <td>Α Εξ. 38.000€</td>
+  <td>Α Εξ. 54.000€</td>
+</tr>
+</table>
+<a href><p align=center >https://www.businessportal.gr/</p> </a>
+<p align=center>Πως μπορώ να ελέγξω τα στοιχεία μιας εμπορικής επιχείρησης
+που έχουν δημοσιοποιηθεί στο ΓΕΜΗ;</p>
+<iframe  width="310" height="206" src="https://www.youtube.com/embed/DlVkoVNSvD4" title="Πως μπορώ να ελέγξω τα στοιχεία μιας εμπορικής επιχείρησης που έχουν δημοσιοποιηθεί στο ΓΕΜΗ;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<p align=center> <b> 2023 copyright&copy;</b> ΝΙΚΟΛΕΤΑ ΚΟΥΤΗ </p>
+
+
+</body>
+</html>
+
